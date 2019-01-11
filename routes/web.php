@@ -14,3 +14,10 @@
 Route::get('/', function () {
     return view('index');
 });
+
+
+Route::get('/file',function(){
+	return view('example');
+});
+
+Route::get('/file/download/23453674321','ExampleController@export_pdf');
